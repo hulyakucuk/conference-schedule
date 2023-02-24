@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  background-color: rgb(180, 179, 179);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2.5rem;
+}
+nav div.logo span {
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+}
+
+div.main-container {
+  text-align: center;
+  background-image: url(/img/speakers.webp);
+  height: 25rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.main-container input {
+  align-items: center;
+  padding: 1rem;
+  width: 50%;
+  opacity: 0.8;
+  border-radius: 6rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+div.main-container input:hover {
+  cursor: pointer;
+  background-color: rgb(9, 133, 196);
+  padding: 1.3rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2.5rem;
+
+    div.logo{
+        span{
+          font-weight: 500;
+          font-size: 1.3rem;
+          letter-spacing: 0.2rem;
+        }
+    }
+  
+}
