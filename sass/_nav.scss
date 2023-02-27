@@ -1,15 +1,34 @@
 nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
     padding: 2.5rem;
-
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
     div.logo{
         span{
           font-weight: 500;
           font-size: 1.3rem;
           letter-spacing: 0.2rem;
+          text-transform: capitalize;
         }
     }
+    .pages>ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li{
+        margin-right: 1rem;
+        a{
+          font-size: 1.3rem;
+          color:black;
+          &:hover{
+            color:  rgb(9, 133, 196);
+          }
+        }
+      }
+    }
+
   
 }

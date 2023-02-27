@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
-  background-color: rgb(180, 179, 179);
+  background-color: rgb(194, 194, 194);
+  text-decoration: none;
+  list-style: none;
 }
 
 nav {
@@ -10,22 +12,43 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   padding: 2.5rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
 }
 nav div.logo span {
   font-weight: 500;
   font-size: 1.3rem;
   letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+nav .pages > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav .pages > ul li {
+  margin-right: 1rem;
+}
+nav .pages > ul li a {
+  font-size: 1.3rem;
+  color: black;
+}
+nav .pages > ul li a:hover {
+  color: rgb(9, 133, 196);
 }
 
 div.main-container {
   text-align: center;
   background-image: url(/img/speakers.webp);
-  height: 25rem;
+  height: 30rem;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 5.5rem;
 }
 div.main-container input {
   align-items: center;
@@ -33,12 +56,70 @@ div.main-container input {
   width: 50%;
   opacity: 0.8;
   border-radius: 6rem;
-  letter-spacing: 0.5rem;
-  font-weight: bold;
-  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  box-shadow: none;
 }
-div.main-container input:hover {
-  cursor: pointer;
-  background-color: rgb(9, 133, 196);
-  padding: 1.3rem;
+
+div#categories {
+  position: relative;
+  top: 6rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+div#categories ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+div#categories ul li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div#categories ul li a {
+  width: auto;
+  color: black;
+  margin: 0.5rem;
+  padding: 2rem;
+}
+div#categories ul li a:hover {
+  color: rgb(80, 89, 97);
+}
+
+div.speakers {
+  position: relative;
+  top: 6rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+div.speakers .speaker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+div.speakers .speaker img {
+  border-radius: 3.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: aliceblue;
+  margin-bottom: 1.5rem;
+}
+div.speakers .speaker img:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */

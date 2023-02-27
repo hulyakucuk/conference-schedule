@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,53 +8,104 @@
     <title>Document</title>
     <link rel="stylesheet" href="./sass/style.css">
 </head>
-<body>
- <nav class="nav-bar">
-    <div class="logo">
-        <span>Conference-Schedule</span>
+
+<body>   
+    <nav class="nav-bar">
+        <div class="logo">
+            <i class="fa-solid fa-microphone"></i>
+            <span>Konferans-Takvimi</span>
+        </div>
+        <div class="pages">
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#categories">Kategoriler</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="mode">mode</div>
+        <div class="sidebar">
+            <div class="menu">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <span>Giriş Yap </span>
+            </div>
+        </div>
+    </nav>
+
+
+ 
+    <div class="main-container" id="main-container">
+        <input type="text" placeholder="Hangi konuşmacıyı arıyorsunuz?" value="">
+        
     </div>
 
-    <div class="mode"></div>
-    <div class="sidebar">
-    <div class="menu">
-        <span>MENU</span>
-    </div>
-</div>
- </nav>
-<div class="main-container">
-    <input class="input" type="button" value="buy a ticket!">
-</div>
-<div class="search">
-    <form action="#">
-        <input type="search" placeholder="search">
-    </form>
-</div>
- <div class="container">
+    <div class="container">
 
- <div class="speakers">
+    <div id="categories">
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-location-dot"></i>Yerel Konuşmacı</a></li>
+        <li> <a href="#"><i class="fa-solid fa-globe"></i>Global Konuşmacı</a></li>
+        <li> <a href="#"><i class="fa-solid fa-star"></i>Exclusive Konuşmacı</a></li>
+      </ul>
+    </div>    
 
- </div>
-</div>
-<section class="contact" id="contact">
-    <h1 class="heading"><span>contact </span> us </h1>
-    <div class="row">
-        <form action="">
-            <input type="text" placeholder="name" class="box">
-            <input type="text" placeholder="surname" class="box">
-            <input type="email" placeholder="email" class="box">
-            <input type="number" placeholder="number" class="box">
-            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn">
-            
-        </form>
-        <div class="image">
-            <img src="image/contact.jpg">
+
+        <div class="speakers">
+            <div class="speaker">
+                <img src="./img/dogan-cuceloglu.jpg">
+                <span>Doğan Cüceloğlu</span>
+            </div>
+            <div class="speaker">
+                <img src="./img/faruk-ondag.jpg">
+                <span>Faruk Öndağ</span>
+            </div>
+            <div class="speaker">
+                <img src="./img/kemal-sayar.jpg">
+                <span>Kemal Sayar</span>
+            </div>
+            <div class="speaker">
+                <img src="./img/nasuh-mahruki.jpg">
+                <span>Nasuh Mahruki</span>
+            </div>
+            <div class="speaker">
+                <img src="./img/TuncFindik.jpg">
+                <span>Tunç Fındık</span>
+            </div>
+            <div class="speaker">
+                <img src="./img/basak-sayan.webp">
+                <span>Başak Sayan</span>
+            </div>
+            <div class="speaker">
+                <img src="./img/kaan-sekban.jpg">
+                <span>Kaan Sekban</span>
+            </div>
+            <div class="speaker">
+                <img src="./img/zumra-atalay.webp">
+                <span>Zümra Atalay</span>
+            </div>
         </div>
     </div>
-</section>
-<footer>
-    <div class="credit">created by <span> hulya</span> | all rights reserved</div>
-</footer>
- <script src="https://kit.fontawesome.com/3c85059902.js" crossorigin="anonymous"></script>
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact </span> us </h1>
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="text" placeholder="surname" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+
+            </form>
+            <div class="image">
+                <img src="image/contact.jpg">
+            </div>
+        </div>
+    </section>
+</div>
+    <footer>
+        <div class="credit">created by <span> hulya</span> | all rights reserved</div>
+    </footer>
+    <script src="https://kit.fontawesome.com/3c85059902.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

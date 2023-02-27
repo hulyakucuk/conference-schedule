@@ -4,3 +4,8 @@
     letter-spacing: 0.2rem;
     text-transform: capitalize;
 }
+@mixin flexBetween{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
