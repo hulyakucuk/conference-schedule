@@ -1,0 +1,19 @@
+div.search{
+    @include center;
+    @include flex(flex,column,center);
+    @include position(relative,5.5rem);
+    background-image: url(/img/speakers.webp);
+    height: 30rem;
+    background-size: cover;
+
+
+    input{
+        align-items: center;
+        padding: 1rem;
+        width: 50%;
+        opacity: 0.8;
+        border-radius: 6rem;
+        box-shadow: none;
+    }
+
+}

@@ -3,9 +3,27 @@
     font-size: 1.3rem;
     letter-spacing: 0.2rem;
     text-transform: capitalize;
-}
+};
 @mixin flexBetween{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+};
+@mixin center{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+};
+@mixin flex($display,$flex-direction,$justify-content){
+display:$display;
+flex-direction:$flex-direction;
+justify-content: $justify-content;
+};
+@mixin position($position,$top){
+    position: $position;
+    top:$top;
+};
+@mixin boxModel($margin,$padding){
+    margin: $margin;
+    padding: $padding;
+};

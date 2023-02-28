@@ -38,30 +38,6 @@ nav .pages > ul li a:hover {
   color: rgb(9, 133, 196);
 }
 
-div.main-container {
-  text-align: center;
-  background-image: url(/img/speakers.webp);
-  height: 30rem;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 5.5rem;
-}
-div.main-container input {
-  align-items: center;
-  padding: 1rem;
-  width: 50%;
-  opacity: 0.8;
-  border-radius: 6rem;
-  font-size: 1.3rem;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
-  box-shadow: none;
-}
-
 div#categories {
   position: relative;
   top: 6rem;
@@ -78,30 +54,34 @@ div#categories ul {
 div#categories ul li {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
 }
 div#categories ul li a {
-  width: auto;
-  color: black;
   margin: 0.5rem;
   padding: 2rem;
+  width: auto;
+  color: black;
 }
 div#categories ul li a:hover {
   color: rgb(80, 89, 97);
 }
 
 div.speakers {
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   position: relative;
   top: 6rem;
-  font-size: 1.5rem;
-  text-align: center;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 1rem;
-  align-items: center;
-  justify-content: center;
 }
 div.speakers .speaker {
   display: flex;
@@ -125,17 +105,17 @@ div.speakers .speaker img:hover {
 }
 
 section#contact {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 6rem;
+  margin: 2rem auto;
+  padding: 5rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  position: relative;
-  top: 6rem;
-  text-align: center;
   width: 80%;
-  align-items: center;
-  margin: 2rem auto;
-  justify-content: center;
-  padding: 5rem;
 }
 section#contact h1 {
   width: 100%;
@@ -161,14 +141,17 @@ section#contact div.row form input {
   width: 100%;
 }
 section#contact div.row form .btn {
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  margin: 0.5rem;
+  padding: 0.5rem;
   display: inline-block;
-  margin-top: 1.5rem;
   border-radius: 5rem;
   background: #333;
   color: #fff;
-  padding: 0.5rem 1.5rem;
   cursor: pointer;
-  font-size: 1.4rem;
 }
 section#contact div.row form .btn:hover {
   background-color: rgb(9, 133, 196);
@@ -182,4 +165,26 @@ footer {
   position: relative;
   top: 2rem;
   text-align: center;
+}
+
+div.search {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 5.5rem;
+  background-image: url(/img/speakers.webp);
+  height: 30rem;
+  background-size: cover;
+}
+div.search input {
+  align-items: center;
+  padding: 1rem;
+  width: 50%;
+  opacity: 0.8;
+  border-radius: 6rem;
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */

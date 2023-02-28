@@ -1,7 +1,5 @@
 footer{
-
-    position: relative;
-    top: 2rem;
+    @include position(relative,2rem);
     text-align: center;
 
 }
